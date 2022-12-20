@@ -1,0 +1,124 @@
+.hearder{
+    position: relative;
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.modal.close {
+    display: none;
+}
+.modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 10px 10px 8px 10px #b8b4b4;
+    top: -80px;
+    width: 568px;
+    max-width: calc(100%-32px);
+    min-height: 400px;
+    border-radius: 5px;
+    animation: modalFadein ease 0.5s;
+}
+.clear{
+    clear: both;
+}
+.modal-header{
+    height: 60px;
+}
+.modal-header{
+    display: block;
+}
+.modal-header p{
+    font-family: 'Lato Light';
+    text-transform: none;
+    font-size: 24px;
+    margin: 20px;
+    padding: 24px 10px;
+    border-bottom: 0.5px solid rgb(161, 156, 156);
+}
+.modal-header .icon-close{
+    font-size: 14px;
+    margin-left: 400px;
+}
+.modal-container .icon-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.modal-container .ti-close:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.modal-container .map-vietnam{
+    margin-top: 20px;
+    width: 100%;
+}
+.region-content li {
+    list-style-type: none;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.map-vietnam ul.region-content > li.region {
+    float: left;
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+.map-vietnam ul.region-content {
+    margin:auto;
+    width: 300px;
+}
+.map-vietnam ul.region-content > li.region > .btn {
+    line-height: 45px;
+    height: 45px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+.btn {
+    font-size: 12px;
+    padding: 8px 0;
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+@keyframes modalFadein{
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}

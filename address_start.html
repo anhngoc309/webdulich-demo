@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/address_start.css">
+    <link rel="stylesheet" href="./assets/css/fonts/themify-icons/themify-icons.css">
+    <title>Khuvucsong</title>
+</head>
+<body>
+    <div class="js-address-start">
+        <button>adasdas</button>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <header class="modal-header">
+                    <p>Bạn ở khu vực?</p>
+            </header>
+            <div class="js-modal-close">
+                <button type="button" class="icon-close">
+                    <i class="ti-close"></i>
+                </button>
+            </div>
+            <div class="map-vietnam">
+                <ul class="region-content">
+                    <li class="region">
+                        <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
+                            <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Nam
+                        </button>
+                    </li>
+                    <li class="region">
+                        <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
+                            <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Bắc
+                        </button>
+                    </li>
+                    <li class="region">
+                        <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
+                            <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Tây
+                        </button>
+                    </li>
+                    <li class="region">
+                        <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
+                            <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Trung
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const addressBtn = document.querySelector('.js-address-start')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const chooseAreas = document.querySelectorAll('.js-choose-area')
+        const modalContainer = document.querySelector('.js-modal-container') 
+    
+
+        function showAddressStart(){
+            modal.classList.remove('close')
+        }
+        function hideAddressStart(){
+            modal.classList.add('close')
+        }
+
+        addressBtn.addEventListener('click', showAddressStart)
+
+        modalClose.addEventListener('click', hideAddressStart)
+        for (const chooseArea of chooseAreas){
+            chooseArea.addEventListener('click', hideAddressStart)
+        }
+
+        modal.addEventListener('click', hideAddressStart)
+        modalContainer.addEventListener('click', function(envent){
+            envent.stopPropagation()
+        })
+    </script>
+</body>
+</html>
