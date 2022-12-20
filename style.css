@@ -141,20 +141,20 @@ header .sticky .mainMenu a{
 }
 .image1{
     height: 480px;
-    background-image: url(/Images/halong.jpg);
+    background-image: url(https://windows10spotlight.com/wp-content/uploads/2021/01/43628e534c5d5615579a9be2efff2e0b.jpg);
     background-position: center;
     background-size: cover;
 
 }
 .image2{
     height: 480px;
-    background-image: url(/Images/sapa.jpg);
+    background-image: url(https://taucaotoc.vn/wp-content/uploads/2020/04/Con-Dao-3.jpg);
     background-position: center;
     background-size: cover;
 }
 .image3{
     height: 480px;
-    background-image: url(/Images/condao.jpeg);
+    background-image: url(http://media.vietq.vn/files/ctvhanh/du-lich-hoi-an-1.jpg);
     background-position: center;
     background-size: cover;
 }
