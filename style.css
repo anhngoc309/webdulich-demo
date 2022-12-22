@@ -335,7 +335,7 @@ header .sticky .mainMenu a{
 .slick-dots{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 45%;
     transform: translateY(-250%);
     display: flex !important;
     justify-content: center;
