@@ -1,274 +1,233 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="tour-trong-nuoc.css">
-        <title>PKATourist - Tour trong nước</title>
-        <link rel="stylesheet" href="./assets/css/fonts/themify-icons/themify-icons.css">
-    </head>
 
-    <body>
-        <div class="js-address-start">
-            <button>adasdas</button>
+<head>
+  <link rel="stylesheet" href="tour-trong-nuoc.css">
+  <title>PKATourist - Tour trong nước</title>
+  <link rel="stylesheet" href="./ThueXe/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="MainHeader">
+      <img src="https://upanh123.com/wp-content/uploads/2020/12/back-ground-thien-nhien-viet-nam-yen-bai.jpg" alt=""
+        class="background" />
+      <div class="main_title">
+        <div class="title">
+          <h1>TOUR DU LỊCH TRONG NƯỚC</h1>
+          <p>
+            Núi mang lại vẻ đẹp mạnh mẽ, sông mang lại nét dịu dàng thướt tha.
+            Khi hai yếu tố hòa quyện vào nhau tạo nên một bức sơn mài bồng lai
+            tiên cảnh.
+          </p>
         </div>
-        <div class="modal js-modal">
-            <div class="modal-container js-modal-container">
-                <header class="modal-header">
-                        <p>Bạn ở khu vực?</p>
-                </header>
-                <div class="js-modal-close">
-                    <button type="button" class="icon-close">
-                        <i class="ti-close"></i>
-                    </button>
-                </div>
-                <div class="map-vietnam">
-                    <ul class="region-content">
-                        <li class="region">
-                            <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
-                                <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Nam
-                            </button>
-                        </li>
-                        <li class="region">
-                            <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
-                                <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Bắc
-                            </button>
-                        </li>
-                        <li class="region">
-                            <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
-                                <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Tây
-                            </button>
-                        </li>
-                        <li class="region">
-                            <button class="btn btn-success js-choose-area" onclick="updateRegion(2)">
-                                <i class="fa ti-location-arrow " style="margin-right: 20px"></i> Miền Trung
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="timkiem">
+      <div>
+        <input type="text" placeholder="Tìm kiếm tour:..." class="input_timkiem" />
+      </div>
+      <div class="ngay">
+        <div class="start_date">
+          <input type="text" disabled placeholder="Từ ngày:" value="" class="input_ngay" />
+          <input type="date" class="select_date" />
         </div>
-        <script>
-    
-            const addressBtn = document.querySelector('.js-address-start')
-            const modal = document.querySelector('.js-modal')
-            const modalClose = document.querySelector('.js-modal-close')
-            const chooseAreas = document.querySelectorAll('.js-choose-area')
-            const modalContainer = document.querySelector('.js-modal-container') 
-        
-    
-            function showAddressStart(){
-                modal.classList.remove('close')
-            }
-            function hideAddressStart(){
-                modal.classList.add('close')
-            }
-    
-            addressBtn.addEventListener('click', showAddressStart)
-    
-            modalClose.addEventListener('click', hideAddressStart)
-            for (const chooseArea of chooseAreas){
-                chooseArea.addEventListener('click', hideAddressStart)
-            }
-    
-            modal.addEventListener('click', hideAddressStart)
-            modalContainer.addEventListener('click', function(envent){
-                envent.stopPropagation()
-            })
-        </script>
-
-
-
-        <div class="container">
-            <div>
-                <img src="https://upanh123.com/wp-content/uploads/2020/12/back-ground-thien-nhien-viet-nam-yen-bai.jpg" alt="" class="background">
-                <h1 class="text">TOUR TRONG NƯỚC</h1>
-            </div>
-            <div id="timkiem">
-                <div>
-                    <input type="text" placeholder="Tìm kiếm tour:..." class="input_timkiem">
-                </div>
-                <div class="ngay">
-                    <div class="start_date">
-                        <input type="text" disabled placeholder="Từ ngày:" value="" class="input_ngay">
-                        <input type="date" class="select_date">
-                    </div>
-                    <div class="ngay">
-                        <div class="start_date">
-                            <input type="text" disabled placeholder="Đến ngày:" value="" class="input_ngay">
-                            <input type="date" class="select_date">
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; align-items: center;">
-                    <select name="" id="" class="select_region">
-                        <option value="">Miền Bắc</option>
-                        <option value="">Miền Trung</option>
-                        <option value="">Miền Nam</option>
-                    </select>
-                </div>
-                <div class="button_search">
-                    <button>Tìm kiếm</button>
-                </div>
-            </div>
-            <div>
-                <h2>Tour nổi bật</h2>
-            </div>
-    
-            <div class="tour">
-                <div>
-                    <img src="https://hoidulich.net/wp-content/uploads/2019/10/phu-quoc.jpg" alt="" class="anh">
-                </div>
-                <div class="mota">
-                    <div class="mota_first"><a href="detailtour.html" class="link">DU LỊCH HÀ NỘI - DU THUYỀN HẠ LONG LACASTA 5 SAO</a></div>
-                    <h3>Thành phố Kiên Giang - Đảo Phú Quốc</h3>
-                    <p>Phương tiện: Hàng không Vietnam Airlines</p>
-                    <p>Thời gian: 3 ngày 2 đêm</p>
-                </div>
-                <div class="box_price">
-                    <p><a href="" class="price">Giá từ: 3.650.000</a></p>
-                    <p><a href="" class="xemthem">Xem thêm</a></p>
-                </div>
-            </div>
-    
-            <div class="tour">
-                <div>
-                    <img src="https://emoi.vn/wp-content/uploads/2021/01/du-lich-sapa.jpg" alt="" class="anh">
-                </div>
-                <div class="mota">
-                    <div class="mota_first"><a href="" class="link">DU LỊCH VÙNG NÚI CAO TÂY BẮC - SAPA</a></div>
-                    <h3>Tỉnh Lào Cai - Sapa</h3>
-                    <p>Phương tiện: Đi về bằng xe</p>
-                    <p>Thời gian: 4 ngày 3 đêm</p>
-                </div>
-                <div class="box_price">
-                    <p><a href="" class="price">Giá từ: 3.899.000</a></p>
-                    <p><a href="" class="xemthem">Xem thêm</a></p>
-                </div>
-            </div>
-    
-            <div class="tour">
-                <div>
-                    <img src="https://www.tripnow.vn/wp-content/uploads/2021/01/du-lich-da-nang-thang-9-3.jpg" alt=""
-                        class="anh">
-                </div>
-                <div class="mota">
-                    <div class="mota_first"><a href="" class="link">DU LỊCH ĐÀ NẴNG - HÒA VANG - BÀ NÀ HILLS</a></div>
-                    <h3>Thành phố Đà Nẵng</h3>
-                    <p>Phương tiện: Hàng không Vietnam Airlines</p>
-                    <p>Thời gian: 3 ngày 2 đêm</p>
-                </div>
-                <div class="box_price">
-                    <p><a href="" class="price">Giá từ: 3.499.000</a></p>
-                    <p><a href="" class="xemthem">Xem thêm</a></p>
-                </div>
-            </div>
-    
-            <div class="tour">
-                <div>
-                    <img src="https://wall.vn/wp-content/uploads/2020/04/hanoi-ve-dem-3.jpg" alt="" class="anh">
-                </div>
-                <div class="mota">
-                    <div class="mota_first"><a href="" class="link">DU LỊCH HÀ NỘI - THĂNG LONG - CHÙA TRẤN QUỐC</a></div>
-                    <h3>Thành phố Hà Nội - Thăng Long</h3>
-                    <p>Phương tiện: Đi về bằng xe</p>
-                    <p>Thời gian: 2 ngày 1 đêm</p>
-                </div>
-                <div class="box_price">
-                    <p><a href="" class="price">Giá từ: 1.999.000</a></p>
-                    <p><a href="" class="xemthem">Xem thêm</a></p>
-                </div>
-            </div>
-    
-            <div class="tour">
-                <div>
-                    <img src="https://cuoituancuatui.com/wp-content/uploads/thap-ba-ponagar.jpg" alt="" class="anh">
-                </div>
-                <div class="mota">
-                    <div class="mota_first"><a href="" class="link">DU LỊCH NHA TRANG - THÁP BÀ PONAGAR</a></div>
-                    <h3>Thành phố Nha Trang</h3>
-                    <p>Phương tiện: Hàng không Vietnam Airlines</p>
-                    <p>Thời gian: 3 ngày 2 đêm</p>
-                </div>
-                <div class="box_price">
-                    <p><a href="" class="price">Giá từ: 3.199.000</a></p>
-                    <p><a href="" class="xemthem">Xem thêm</a></p>
-                </div>
-            </div>
-    
-            <div class="xemthem"><a href="">Xem thêm</a></div>
+        <div class="ngay">
+          <div class="start_date">
+            <input type="text" disabled placeholder="Đến ngày:" value="" class="input_ngay" />
+            <input type="date" class="select_date" />
+          </div>
         </div>
+      </div>
+      <div style="display: flex; align-items: center">
+        <select name="" id="" class="select_region">
+          <option value="">Miền Bắc</option>
+          <option value="">Miền Trung</option>
+          <option value="">Miền Nam</option>
+        </select>
+      </div>
+      <div class="button_search">
+        <button>Tìm kiếm</button>
+      </div>
+    </div>
 
-        <div class="footer">
-            <div class="footer-top">
-                <div class="info">
-                    <img src="https://www.saigontourist.net/images/logo.png" alt="">
-                    <p>Lữ hành Saigontourist, thương hiệu lữ hành hàng đầu Việt Nam</p>
-                    <p>Thương hiệu quốc gia</p>
-                    <img src="https://www.saigontourist.net/images/prize.png" alt="">
-                    <p>Tổng đài: 1900 1808</p>
-                    <p>Email: info@saigontourist.net</p>
-                </div>
+    <div class="main_content">
+      <div>
+        <h2>Tour nổi bật</h2>
+      </div>
 
-                <div class="service-information">
-                    <h3>DỊCH VỤ</h3>
-                    <p><a href="">Tour trong nước</a></p>
-                    <p><a href="">Tour nước ngoài</a></p>
-                    <p><a href="">Vé máy bay</a></p>
-                    <p><a href="">Thuê xe</a></p>
-                    <p><a href="">Tuyển dụng</a></p>
-                    <p><a href="">Du học</a></p>
-                    <br>
-                    <h3>THÔNG TIN</h3>
-                    <p><a href="">Tuyến điểm</a></p>
-                    <p><a href="">Tin lữ hành Saigontourist</a></p>
-                    <p><a href="">Tin du lịch</a></p>
-                </div>
-
-                <div class="customer-care">
-                    <h3>CHĂM SÓC KHÁCH HÀNG</h3>
-                    <p><a href="">Thẻ khách hàng</a></p>
-                    <p><a href="">Tải app Saigontourist</a></p>
-                    <p><a href="">Travel Voucher</a></p>
-                    <p><a href="">Bảo hiểm du lịch</a></p>
-                    <p><a href="">Ý kiến khách hàng</a></p>
-                    <p><a href="">Phiếu góp ý</a></p>
-                    <p><a href="">Chương trình</a></p>
-                </div>
-
-                <div class="contact">
-                    <h3>LIÊN HỆ</h3>
-                    <p><a href="">Giới thiệu</a></p>
-                    <p><a href="">Liên hệ</a></p>
-                    <p><a href="">Chi nhánh</a></p>
-                    <p><a href="">Quy định bảo vệ</a></p>
-                    <p><a href="">Điều khoản chung</a></p>
-                    <p><a href="">Hướng dẫn mua tour online</a></p>
-                    <p><a href="">Quy định thanh toán</a></p>
-                    <p><a href="">Chính sách giao nhận</a></p>
-                    <p><a href="">Chính sách hủy phạt</a></p>
-                    <p><a href="">Chính sách chất lượng</a></p>
-                    <p><a href="">Tuyển dụng</a></p>
-                </div>
-            </div>
-
-            <div class="footer-bottom"  style="text-align: center; font-size: 13px;">
-                <p>
-                    <img src="https://www.saigontourist.net/uploads/images/thequocte.gif" alt="">
-                </p>
-                <p>Bản quyền 2006 - 2022 © Công ty TNHH Một Thành Viên Dịch vụ Lữ hành Saigontourist.</p>
-                <p>45 Lê Thánh Tôn, Quận 1, TPHCM.</p>
-                <br>
-                <p>ĐT:  (84-28) 38 279 279 - Fax: (84-28) 38 224 987.</p>
-                <p>Số đăng ký kinh doanh: 0310891532 do Sở kế hoạch và đầu tư TPHCM cấp ngày 27/07/2018, cấp/thay đổi lần thứ 10.</p>
-                <p>Giấy phép kinh doanh Dịch vụ Lữ hành Quốc tế: 79-300/2018 / TCDL-GP-LHQT</p>
-                <p>Người đại diện: Ông Nguyễn Hữu Y Yên.</p>
-                <br>
-                <p>® Ghi rõ nguồn "SAIGONTOURIST.NET" khi sử dụng lại thông tin từ website này.</p>
-                <p><img src="https://saigontourist.net/uploads/images/for-mobile/banner-web-tai-App.jpg" alt=""></p>
-                <h2 style="color: black;">TƯ VẤN & ĐẶT DỊCH VỤ: 1900 1808</h2>
-                <p>Website SAIGONTOURIST.NET đã được đăng ký với Bộ Công Thương</p>
-                <p><img src="https://saigontourist.net/uploads/homepage/20150827110756-dathongbao.png" alt="" style="width: 190px; height: 70px"></p>
-                <p>Kết nối với Lữ hành Saigontourist</p>
-            </div>
+      <div class="tour" id="phuquoc">
+        <div>
+          <img src="https://hoidulich.net/wp-content/uploads/2019/10/phu-quoc.jpg" alt="" class="anh" />
+          <div class="overlay">1.650.000đ/Khách</div>
         </div>
-    </body>
+        <div class="mota">
+          <div class="mota_first">
+            <a href="#" class="link">DU LỊCH KIÊN GIANG - PHÚ QUỐC</a>
+          </div>
+          <h3>Thành phố Kiên Giang - Đảo Phú Quốc</h3>
+          <p>Phương tiện: Hàng không Vietnam Airlines</p>
+          <p>Thời gian: 3 ngày 2 đêm</p>
+        </div>
+        <div class="ChiTiet">
+          <a href="" class="xemthem">Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="tour" id="taybac">
+        <div>
+          <img src="https://emoi.vn/wp-content/uploads/2021/01/du-lich-sapa.jpg" alt="" class="anh" />
+          <div class="overlay">1.650.000đ/Khách</div>
+        </div>
+        <div class="mota">
+          <div class="mota_first">
+            <a href="" class="link">DU LỊCH VÙNG NÚI CAO TÂY BẮC - SAPA</a>
+          </div>
+          <h3>Tỉnh Lào Cai - Sapa</h3>
+          <p>Phương tiện: Đi về bằng xe</p>
+          <p>Thời gian: 4 ngày 3 đêm</p>
+        </div>
+        <div class="ChiTiet">
+          <a href="#" class="xemthem">Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="tour" id="sapa">
+        <div>
+          <img src="https://www.tripnow.vn/wp-content/uploads/2021/01/du-lich-da-nang-thang-9-3.jpg" alt=""
+            class="anh" />
+          <div class="overlay">1.650.000đ/Khách</div>
+        </div>
+        <div class="mota">
+          <div class="mota_first">
+            <a href="#" class="link">DU LỊCH ĐÀ NẴNG - HÒA VANG - BÀ NÀ HILLS</a>
+          </div>
+          <h3>Thành phố Đà Nẵng</h3>
+          <p>Phương tiện: Hàng không Vietnam Airlines</p>
+          <p>Thời gian: 3 ngày 2 đêm</p>
+        </div>
+        <div class="ChiTiet">
+          <a href="" class="xemthem">Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="tour">
+        <div>
+          <img src="https://wall.vn/wp-content/uploads/2020/04/hanoi-ve-dem-3.jpg" alt="" class="anh" />
+          <div class="overlay">1.650.000đ/Khách</div>
+        </div>
+        <div class="mota">
+          <div class="mota_first">
+            <a href="" class="link">DU LỊCH HÀ NỘI - THĂNG LONG - CHÙA TRẤN QUỐC</a>
+          </div>
+          <h3>Thành phố Hà Nội - Thăng Long</h3>
+          <p>Phương tiện: Đi về bằng xe</p>
+          <p>Thời gian: 2 ngày 1 đêm</p>
+        </div>
+        <div class="ChiTiet">
+          <a href="" class="xemthem">Chi Tiết</a>
+        </div>
+      </div>
+
+      
+      
+      <div class="tours_in_database"></div>
+      <script src="./Tour.js"></script>
+    </div>
+
+
+
+
+    <div class="center">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="Active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="info">
+        <img src="https://www.saigontourist.net/images/logo.png" alt="">
+        <p>Lữ hành Saigontourist, thương hiệu lữ hành hàng đầu Việt Nam</p>
+        <p>Thương hiệu quốc gia</p>
+        <img src="https://www.saigontourist.net/images/prize.png" alt="">
+        <p>Tổng đài: 1900 1808</p>
+        <p>Email: info@saigontourist.net</p>
+      </div>
+
+      <div class="service-information">
+        <h3>DỊCH VỤ</h3>
+        <p><a href="">Tour trong nước</a></p>
+        <p><a href="">Tour nước ngoài</a></p>
+        <p><a href="">Vé máy bay</a></p>
+        <p><a href="">Thuê xe</a></p>
+        <p><a href="">Tuyển dụng</a></p>
+        <p><a href="">Du học</a></p>
+        <br>
+        <h3>THÔNG TIN</h3>
+        <p><a href="">Tuyến điểm</a></p>
+        <p><a href="">Tin lữ hành Saigontourist</a></p>
+        <p><a href="">Tin du lịch</a></p>
+      </div>
+
+      <div class="customer-care">
+        <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+        <p><a href="">Thẻ khách hàng</a></p>
+        <p><a href="">Tải app Saigontourist</a></p>
+        <p><a href="">Travel Voucher</a></p>
+        <p><a href="">Bảo hiểm du lịch</a></p>
+        <p><a href="">Ý kiến khách hàng</a></p>
+        <p><a href="">Phiếu góp ý</a></p>
+        <p><a href="">Chương trình</a></p>
+      </div>
+
+      <div class="contact">
+        <h3>LIÊN HỆ</h3>
+        <p><a href="">Giới thiệu</a></p>
+        <p><a href="">Liên hệ</a></p>
+        <p><a href="">Chi nhánh</a></p>
+        <p><a href="">Quy định bảo vệ</a></p>
+        <p><a href="">Điều khoản chung</a></p>
+        <p><a href="">Hướng dẫn mua tour online</a></p>
+        <p><a href="">Quy định thanh toán</a></p>
+        <p><a href="">Chính sách giao nhận</a></p>
+        <p><a href="">Chính sách hủy phạt</a></p>
+        <p><a href="">Chính sách chất lượng</a></p>
+        <p><a href="">Tuyển dụng</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom" style="text-align: center; font-size: 13px;">
+      <p>
+        <img src="https://www.saigontourist.net/uploads/images/thequocte.gif" alt="">
+      </p>
+      <p>Bản quyền 2006 - 2022 © Công ty TNHH Một Thành Viên Dịch vụ Lữ hành Saigontourist.</p>
+      <p>45 Lê Thánh Tôn, Quận 1, TPHCM.</p>
+      <br>
+      <p>ĐT: (84-28) 38 279 279 - Fax: (84-28) 38 224 987.</p>
+      <p>Số đăng ký kinh doanh: 0310891532 do Sở kế hoạch và đầu tư TPHCM cấp ngày 27/07/2018, cấp/thay đổi lần thứ 10.
+      </p>
+      <p>Giấy phép kinh doanh Dịch vụ Lữ hành Quốc tế: 79-300/2018 / TCDL-GP-LHQT</p>
+      <p>Người đại diện: Ông Nguyễn Hữu Y Yên.</p>
+      <br>
+      <p>® Ghi rõ nguồn "SAIGONTOURIST.NET" khi sử dụng lại thông tin từ website này.</p>
+      <p><img src="https://saigontourist.net/uploads/images/for-mobile/banner-web-tai-App.jpg" alt=""></p>
+      <h2 style="color: black;">TƯ VẤN & ĐẶT DỊCH VỤ: 1900 1808</h2>
+      <p>Website SAIGONTOURIST.NET đã được đăng ký với Bộ Công Thương</p>
+      <p><img src="https://saigontourist.net/uploads/homepage/20150827110756-dathongbao.png" alt=""
+          style="width: 190px; height: 70px"></p>
+      <p>Kết nối với Lữ hành Saigontourist</p>
+    </div>
+  </div>
+
+</body>
+
 </html>

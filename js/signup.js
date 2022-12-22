@@ -1,38 +1,49 @@
-let username = document.getElementById("username");
-let email = document.getElementById("email");
-let password = document.getElementById("password");
-let btnSignup = document.querySelector(".btn-signup");
-let btnLogin = document.querySelector(".btn-login");
+let username = document.getElementById("username"); // lay thẻ input có id - username
+let email = document.getElementById("email"); // lấy thẻ có id - email
+let password = document.getElementById("password"); // ... password
+let btnSignup = document.querySelector(".btn-signup"); // lay nut submit
+let btnLogin = document.querySelector(".btn-login"); // lấy nut chuyển sang đăng nhập
 
-btnSignup.addEventListener("click", (e) => {
-  e.preventDefault();
-  let user = {
-    username: username.value,
-    email: email.value,
-    password: password.value,
+
+// hàm xẩy ra sự kiên khi nhấn vào nút đăng nhập
+btnSignup.addEventListener("click", function (e) {
+  e.preventDefault(); // chặn ko tải lại trang
+  let Name = username.value;
+  let Email = email.value;
+  let Password = password.value;
+
+  let newUser = {
+    "data": {
+      "Name": Name,
+      "Email": Email,
+      "password": Password,
+    }
   };
-  let json = JSON.stringify(user);
-  if (!username.value || !email.value || !password.value) {
-    alert("vui long nhap day du thong tin");
-  } else {
-    localStorage.setItem(username.value, json);
-    alert("dang ky thanh cong");
-    window.location.href = "login.html";
-  }
+  console.log(newUser);
+  PostAPI(newUser);
+
+  setTimeout((e) => {
+    alert("Đăng ký thành công.");
+    window.location.href = "../login.html";
+  }, 2000);
 });
-btnSignup.addEventListener("Enter", (e) => {
-  e.preventDefault();
-  let user = {
-    username: username.value,
-    email: email.value,
-    password: password.value,
-  };
-  let json = JSON.stringify(user);
-  if (!username.value || !email.value || !password.value) {
-    alert("vui long nhap day du thong tin");
-  } else {
-    localStorage.setItem(username.value, json);
-    alert("dang ky thanh cong");
-    window.location.href = "login.html";
-  }
-});
+
+
+// Tải dữ liệu lên database (tạo mới)
+function PostAPI(datas) {
+  fetch("http://localhost:1337/api/clients", {
+    method: "POST", // or 'PUT'
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify(datas), // dữ liệu truyền đi
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}

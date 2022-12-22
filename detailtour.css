@@ -859,34 +859,3 @@ button, input, select, textarea {
 .pageTitle {
 	background-color: #003366;
 }
-
-.footer{
-    width: 100%;
-    height: 400px;
-    background-color: rgb(23, 44, 127);
-}
-.footer-top{
-    display: flex;
-    color: rgb(255, 255, 255);
-    padding: 2rem 5rem;
-}
-.footer-top .infor{
-    padding: 2rem;
-    width: 40%;
-}
-.footer-top .service-information{
-    padding: 0 2rem;
-    width: 20%;
-}
-.footer-top .customer-care{
-    padding: 0 2rem;
-    width: 20%;
-}
-.footer-top .contact{
-    padding: 0 2rem;
-    width: 20%;
-}
-.footer a{
-    text-decoration: none;
-    color: white;
-}
