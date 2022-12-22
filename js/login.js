@@ -3,53 +3,22 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let btnLogin = document.querySelector(".btn-login");
 
+// khi nhấn vào cái nút
 btnLogin.addEventListener("click", (e) => {
   e.preventDefault();
-  let user = {
-    username: username.value,
-    email: email.value,
-    password: password.value,
-  };
-  console.log(user);
-  let json = JSON.stringify(user);
-  if (!username.value || !email.value || !password.value) {
-    alert("vui long nhap day du thong tin");
-  }
-  if (localStorage.getItem(username.value) == json) {
-    alert("dang nhap thanh cong");
-    window.location.href = "home.html";
-  } else {
-    alert("dang nhap that bai");
-  }
-});
-btnLogin.addEventListener("Enter", (e) => {
-  e.preventDefault();
-  let user = {
-    username: username.value,
-    email: email.value,
-    password: password.value,
-  };
-  console.log(user);
-  let json = JSON.stringify(user);
-  if (!username.value || !email.value || !password.value) {
-    alert("vui long nhap day du thong tin");
-  }
-  if (localStorage.getItem(username.value) == json) {
-    alert("dang nhap thanh cong");
-    window.location.href = "home.html";
-  } else {
-    alert("dang nhap that bai");
-  }
+  LoginAPI(); // Gọi tới API để xử lý
 });
 
 
 
-// Lấy dữ liệu toàn bộ user
-function GetAPI() {
+
+// Lấy dữ liệu toàn bộ user - database
+function LoginAPI() {
   fetch("http://localhost:1337/api/clients")
   .then((response) => response.json())
   .then((datas) => {
     console.log("Success:", datas);
+    login(datas.data); // Gọi tới hàm kiểm tra mật khẩu
     return datas;
   })
   .catch((error) => {
@@ -57,19 +26,31 @@ function GetAPI() {
   });
 }
 
-// Mảng các người dùng
-// B1: đọc dữ liệu đăng nhập
-// B2: So sánh dữ liệu trong bảng người dùng
-// - lặp từng phần tử dể so sánh 
+// đọc dữ liệu từ dao diện người dùng và kiểm tra mật khẩu
+function login(datas) {
+  const username = document.querySelector("#username");
+  const email = document.querySelector("#email");
+  const password = document.querySelector("#password");
 
-[
-  {id=1,name="dfa", age=20},
-  {id=1,name="manfasdfh", age=20},
-  {id=1,name="maasdfnh", age=20},
-  {id=1,name="manh", age=20},
-  {id=1,name="maasdfnh", age=20},
-  {id=1,name="manafdsh", age=20},
-]
+  console.log(username.value);
 
-{id=1,name="manh", age=20}
+  let check = false; 
+  // const database = GetAPI();
+
+  // let data = database.data; 
+
+  // console.log(data);
+
+  datas.map(function(phantu) {
+    if(phantu.attributes.Name == username.value && phantu.attributes.Email == email.value && phantu.attributes.Password == password.value) {
+      alert("Đăng nhập thành công");
+      
+    } else {
+      alert("Đăng nhập thất bại");
+    }
+  })
+}
+
+
+
 

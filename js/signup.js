@@ -20,7 +20,12 @@ btnSignup.addEventListener("click", function (e) {
     }
   };
   console.log(newUser);
-  // PostAPI(newUser);
+  PostAPI(newUser);
+
+  setTimeout((e) => {
+    alert("Đăng ký thành công.");
+    window.location.href = "../login.html";
+  }, 2000);
 });
 
 
