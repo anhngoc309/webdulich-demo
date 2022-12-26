@@ -5,7 +5,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         infinite: true,
         arrows: true,
         prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
@@ -16,9 +16,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(window).scroll(function(){
         if($(this).scrollTop()){
-            $(".header").addClass("sticky");
+            $(".header-menu").addClass("sticky");
+            $(".header").css( "visibility", "hidden");
         }else {
-            $(".header").removeClass("sticky");
+            $(".header-menu").removeClass("sticky");
+            $(".header").css( "visibility", "visible");
         }
     });
 });
