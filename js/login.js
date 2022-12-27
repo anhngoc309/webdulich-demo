@@ -44,6 +44,7 @@ function login(datas) {
   datas.map(function(phantu) {
     if(phantu.attributes.Name == username.value && phantu.attributes.Email == email.value && phantu.attributes.Password == password.value) {
       alert("Đăng nhập thành công");
+      window.location.href = "../index.html";
       
     } else {
       alert("Đăng nhập thất bại");

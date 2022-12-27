@@ -16,7 +16,7 @@ btnSignup.addEventListener("click", function (e) {
     "data": {
       "Name": Name,
       "Email": Email,
-      "password": Password,
+      "Password": Password,
     }
   };
   console.log(newUser);
