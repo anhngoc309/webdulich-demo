@@ -34,22 +34,31 @@ function login(datas) {
 
   console.log(username.value);
 
-  let check = false; 
+  let check; 
   // const database = GetAPI();
 
   // let data = database.data; 
 
   // console.log(data);
-
   datas.map(function(phantu) {
     if(phantu.attributes.Name == username.value && phantu.attributes.Email == email.value && phantu.attributes.Password == password.value) {
-      alert("Đăng nhập thành công");
-      window.location.href = "../index.html";
-      
+      check = true;
+
+
     } else {
-      alert("Đăng nhập thất bại");
+      check = false;
     }
   })
+
+  if (check) {
+    setTimeout((e) => {
+      alert("Đăng nhập thành công");
+      window.location.href = "../index.html";
+    }, 2000);
+  } else {
+    alert("Dăng nhập thất bại");
+  }
+
 }
 
 
