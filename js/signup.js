@@ -3,7 +3,7 @@ let email = document.getElementById("email"); // lấy thẻ có id - email
 let password = document.getElementById("password"); // ... password
 let btnSignup = document.querySelector(".btn-signup"); // lay nut submit
 let btnLogin = document.querySelector(".btn-login"); // lấy nut chuyển sang đăng nhập
-
+let confirmPassword = document.querySelector("#confirm-password");
 
 // hàm xẩy ra sự kiên khi nhấn vào nút đăng nhập
 btnSignup.addEventListener("click", function (e) {
@@ -16,9 +16,14 @@ btnSignup.addEventListener("click", function (e) {
     "data": {
       "Name": Name,
       "Email": Email,
-      "password": Password,
+      "Password": Password,
     }
   };
+
+  if (!Name || !Email || !Password || !confirmPassword.value) {
+    alert("Vui lòng nhập đủ thông tin");
+    return
+  } 
   console.log(newUser);
   PostAPI(newUser);
 
