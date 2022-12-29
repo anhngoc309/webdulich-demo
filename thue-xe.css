@@ -25,6 +25,7 @@
 }
 
 .main_title .title {
+    position: relative;
     color: #fff;
     padding-left: 20px;
     padding-top: 15px;
