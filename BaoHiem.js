@@ -16,7 +16,7 @@ function ResAPI() {
           return(
           `<div class="content">
               <div class="boxService">
-              <a href=" ">
+                <a href="">
                   <div class="image">
                       <div class="box">
                           <img src=${Insurance.attributes.Picture} alt="">
@@ -25,7 +25,7 @@ function ResAPI() {
                           <p class="text">Giá từ</p>
                           <p class="price">${Insurance.attributes.Price}</p>
                       </div>
-                  </div
+                  </div>
   
                   <div class="ContentService">
                       <div class="title_content">
@@ -33,7 +33,7 @@ function ResAPI() {
                           <p>${Insurance.attributes.Content}</p>
                       </div>
                   </div>
-              </a>
+                </a>
                </div>
           </div>`)
         });
