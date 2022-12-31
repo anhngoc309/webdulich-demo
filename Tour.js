@@ -1,3 +1,6 @@
+const search_item = document.getElementById('search-item');
+const element_tour = document.querySelectorAll('.tour');
+
 function ResAPI() {
     const tour_list = document.querySelector(".tours_in_database")
     
@@ -40,3 +43,24 @@ function ResAPI() {
 }
 
 ResAPI();
+
+function searchItem(){
+    let valueItem = search_item.value.toLowerCase();
+    Array.from(element_tour).forEach(function(ele){
+        let nameItem = ele.querySelector('.mota_first').firstElementChild.textContent;
+        if(nameItem.toLowerCase().indexOf(valueItem) !== -1){
+            ele.style.display = 'flex';
+        } else {
+            ele.style.display = 'none';
+        }
+        search_item.value = '';
+    })
+}
+search_item.addEventListener('keypress' , (e) => {
+    if(e.key == 'Enter') return searchItem();
+});
+
+if(localStorage.getItem("textvalue") != null) {
+    search_item.setAttribute("value", localStorage.getItem("textvalue"))
+    searchItem();
+}

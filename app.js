@@ -1,3 +1,4 @@
+const tk = document.getElementById('tk');
 $(document).ready(function(){
     $(".image-slider").slick({
         dots: true,
@@ -24,3 +25,13 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+function searchInHome(){
+    var tkiem = tk.value;
+    localStorage.setItem("textvalue", tkiem);
+    return false;
+    
+}
+
