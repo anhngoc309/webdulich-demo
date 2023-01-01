@@ -57,7 +57,7 @@ function searchItem(){
     })
 }
 search_item.addEventListener('keypress' , (e) => {
-    if(e.key == 'Enter') return searchItem();
+    if(e.key == 'Enter') searchItem();
 });
 
 if(localStorage.getItem("textvalue") != null) {
