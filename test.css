@@ -1,0 +1,739 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+* {
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+body {
+	margin: 0;
+}
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a {
+	background-color: transparent;
+}
+img {
+	border: 0;
+}
+b, strong {
+	font-weight: 700;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+textarea {
+	overflow: auto;
+}
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font: inherit;
+	color: inherit;
+}
+input {
+	line-height: normal;
+}
+::after, ::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mainContentSection, .whiteSection, .lightSection {
+	width: 100%;
+	padding: 100px 0 70px 0;
+	background-color: #ffffff;
+	display: block;
+}
+.mainContentSection, .whiteSection, .lightSection {
+	padding-top: 30px;
+}
+.booking-container {
+	background: #fff;
+	padding-top: 30px;
+}
+.booking-container {
+	padding-top: 0px;
+}
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4285;
+	color: #333;
+	background-color: #fff;
+}
+body {
+	font-family: "Montserrat", "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: black;
+	font-weight: 400;
+}
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: 750px;
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: 970px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.container {
+	width: 100%;
+	padding: 0;
+}
+/* @media all and (min-width:320px) */
+.container {
+	width: calc(100% - 30px);
+}
+/* @media all and (min-width:480px) */
+.container {
+	width: calc(100% - 30px);
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: calc(100% - 30px);
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: calc(100% - 30px);
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.progress-wizard {
+	margin-top: 40px;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0 0 30px 0;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.btn-group-vertical > .btn-group::after, .btn-group-vertical > .btn-group::before, .btn-toolbar::after, .btn-toolbar::before, .clearfix::after, .clearfix::before, .container-fluid::after, .container-fluid::before, .container::after, .container::before, .dl-horizontal dd::after, .dl-horizontal dd::before, .form-horizontal .form-group::after, .form-horizontal .form-group::before, .modal-footer::after, .modal-footer::before, .modal-header::after, .modal-header::before, .nav::after, .nav::before, .navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before, .pager::after, .pager::before, .panel-body::after, .panel-body::before, .row::after, .row::before {
+	display: table;
+	content: " ";
+}
+.btn-group-vertical > .btn-group::after, .btn-toolbar::after, .clearfix::after, .container-fluid::after, .container::after, .dl-horizontal dd::after, .form-horizontal .form-group::after, .modal-footer::after, .modal-header::after, .nav::after, .navbar-collapse::after, .navbar-header::after, .navbar::after, .pager::after, .panel-body::after, .row::after {
+	clear: both;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+/* @media all and (min-width:768px) */
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+	float: left;
+}
+/* @media all and (min-width:768px) */
+.col-sm-12 {
+	width: 100%;
+}
+/* @media all and (min-width:768px) */
+.col-sm-5 {
+	width: 41.66%;
+}
+/* @media all and (min-width:768px) */
+.col-sm-7 {
+	width: 58.33%;
+}
+/* @media all and (min-width:992px) */
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+	float: left;
+}
+/* @media all and (min-width:992px) */
+.col-md-8 {
+	width: 66.66%;
+}
+/* @media all and (min-width:992px) */
+.col-md-4 {
+	width: 33.33%;
+}
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+a {
+	color: #ff891e;
+	text-decoration: none !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.infoArea h2 span {
+	color: #ff891e;
+	font-weight: 700;
+}
+.priceTotal h2 span {
+	color: #ff891e;
+	font-size: 25px;
+}
+a, .sectionTitleDouble h2 span, .paginationCenter .pagination li a:hover, .paginationCenter .pagination li.active a, .paginationCenter .pagination li.active a:hover, .paginationCenter .pagination li.active a:focus, .accordionsTransparent .panel-heading.active, .thumbnail.deals .caption .captionTitle:hover, .thumbnail.deals .caption .detailsInfo h5, .thumbnail.blogPostItem .caption .detailsInfo h4, .thumbnail.citiesContent .caption .media .media-body a:hover, .thumbnail.citiesContent .caption .media .media-body h4, .blogTitle:hover, .blogInfo li a:hover, .footerContent .list-unstyled li a:hover, .copyRight .list-inline li a:hover, .copyRightText p a:hover, .destinations .media-body .list-unstyled li i, .destinations .media-body .list-unstyled li a:hover, .destinations .media-body .list-unstyled li a:hover i, .isotopeSelector .overlay .fancybox-pop .overlayInfo h5 span, .isotopeSelector:hover h4, .navbar-nav > li.open a, .navbar-nav > li.open a:hover, .navbar-nav > li.open a:focus, .navbar-nav > li > a:hover, .navbar-nav > li.active a, .navbar-nav > li.active a:hover, .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover, .navbar-nav > li.dropdown.singleDrop .dropdown-menu li a:hover, .lightHeader .navbar-nav > li > a:hover, .darkHeader .navbar-nav > li > a:hover, .footerContent .list-unstyled li a:hover, .copyRight .list-inline li a:hover, .copyRightText p a:hover, .promotionWrapper .promotionTable .promotionTableInner .promotionInfo .rating li, .media-heading a:hover, .bookingDetails, .bookingDetails .buttonTransparent:hover, .bookingDetails .paginationCenter .pagination li:first-child a:hover, .paginationCenter .pagination li:first-child .bookingDetails a:hover, .bookingDetails .paginationCenter .pagination li:last-child a:hover, .paginationCenter .pagination li:last-child .bookingDetails a:hover, .bookingDetails .isotopeFilters ul.filter > li a:hover, .isotopeFilters ul.filter > li .bookingDetails a:hover, .singlePackage .packageInfo .dl-horizontal dt, .singlePackage .packageInfo .dl-horizontal dd span, .singlePackage .packageInfo p span, .blogSidebar .panel .panel-body .list-group .list-group-item:hover, .blogSidebar .panel .panel-body .list-group .list-group-item:hover .badge, .tabArea .tab-content .media .media-body .media-heading:hover, .blogSinglePost .well .list-inline li a:hover, .commentsArea .media .media-body .btn-link, .commentsArea .media .media-body .btn-link:hover, .aboutComments .commentsTable .commentsTableInner .commentsInfo h5, .bookingForm .form .checkbox label a, .bookingForm .commentsForm .checkbox label a, .bookingForm .modal.bookingModal .modal-dialog .modal-content .modal-body .checkbox label a, .modal.bookingModal .modal-dialog .modal-content .bookingForm .modal-body .checkbox label a, .infoArea h2 span, .priceTotal h2 span, .priceTable .panel .priceCircle h3, .priceTable .panel:hover .bodyImageBg .priceCircle h3, .countryTabs .nav-tabs > li.pull-right .list-inline li a:hover {
+	color: #ff891e;
+}
+.infoTitle-kiritm {
+	margin: 25px 0;
+	text-align: center;
+	line-height: 44px;
+	background: #ff891e;
+	color: #fff;
+	font-size: 18px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+/* @media all and (min-width:768px) */
+.bookDetailsInfo {
+	margin-bottom: 0px;
+}
+.bookDetailsInfo {
+	webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.4);
+	width: 100%;
+}
+img {
+	vertical-align: middle;
+}
+.bookDetailsInfo img {
+	width: 100%;
+}
+.infoArea {
+	padding: 20px;
+	background-color: whitesmoke;
+	border-radius: 0 0 4px 4px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.h3, h3 {
+	font-size: 24px;
+}
+.h2, h2 {
+	font-size: 30px;
+}
+h1, h2, h3, h4 {
+	font-family: "Montserrat", "Open Sans", sans-serif;
+	text-transform: uppercase;
+	color: #262a2e;
+	margin-top: 0px;
+	font-weight: 700;
+}
+.infoArea h3 {
+	font-size: 16px;
+	color: #222222;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+.bookDetailsInfo .infoArea > h3 {
+	margin-bottom: 15px;
+}
+ol, ul {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.list-unstyled {
+	padding-left: 0px;
+	list-style: none;
+}
+.infoArea .list-unstyled {
+	margin-bottom: 50px;
+}
+.bookDetailsInfo .infoArea .list-unstyled {
+	margin-bottom: 20px;
+}
+ul li {
+	list-style-type: none;
+}
+.display-hidden {
+	display: none;
+}
+.bookDetailsInfo .infoArea .prepayment-total {
+	padding-top: 20px;
+	border-top: 2px solid #333;
+}
+.bookDetailsInfo .infoArea .prepayment-total .prepayment-total-title {
+	width: 100%;
+	font-size: 26px;
+	font-weight: 600;
+	color: #333;
+	line-height: 36px;
+	padding-bottom: 5px;
+}
+.bookDetailsInfo .infoArea .prepayment-total .prepayment-total-description {
+	font-size: 14px;
+	line-height: 22px;
+	width: 100%;
+	padding: 5px 0;
+}
+.bookDetailsInfo .infoArea .prepayment-total .prepayment-total-price {
+	font-size: 14px;
+	line-height: 22px;
+	width: 100%;
+	padding: 3px 0;
+}
+.price-amount {
+	color: #ff891e;
+	font-size: 25px;
+	font-weight: 700;
+}
+.price-label {
+	font-size: 16px !important;
+	color: #000 !important;
+	font-weight: 500 !important;
+	line-height: 21px;
+	text-transform: lowercase;
+}
+.bookDetailsInfo .infoArea .prepayment-total .prepayment-total-description strong {
+	padding: 0 5px;
+}
+.infoArea h2 {
+	font-size: 20px;
+	color: #222222;
+	font-weight: 400;
+}
+.priceTotal h2 {
+	text-transform: capitalize;
+	color: #222222;
+	font-size: 26px;
+	font-weight: 400;
+}
+.infoArea .list-unstyled li {
+	font-size: 14px;
+	color: #222222;
+	padding: 15px 0;
+	border-bottom: 1px solid #dedede;
+}
+.bookDetailsInfo .infoArea .list-unstyled > li {
+	padding: 7px 0;
+	border-bottom: 0;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-plus-square::before {
+	content: "\f0fe";
+}
+.fa-minus-square::before {
+	content: "\f146";
+}
+.fa-cart-plus::before {
+	content: "\f217";
+}
+.fa-user-times::before {
+	content: "\f235";
+}
+.fa-child::before {
+	content: "\f1ae";
+}
+.fa-user-secret::before {
+	content: "\f21b";
+}
+.fa-calendar::before {
+	content: "\f073";
+}
+.fa-calendar-plus-o::before {
+	content: "\f271";
+}
+.fa-calendar-minus-o::before {
+	content: "\f272";
+}
+.fa-barcode::before {
+	content: "\f02a";
+}
+.infoArea .list-unstyled li i {
+	margin-right: 5px;
+}
+.infoArea .list-unstyled li span {
+	color: #969696;
+}
+.bookDetailsInfo .infoArea .list-unstyled > li > span {
+	font-weight: 600;
+	color: #000;
+}
+.bookDetailsInfo .infoArea > h3 > a {
+	color: #036;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 26px;
+	cursor: pointer;
+}
+.payment-wrap {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.payment-wrap {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.condition-sgt {
+	float: left;
+	margin-bottom: 10px;
+}
+.buttonArea {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.buttonArea.galleryBtnArea {
+	text-align: left;
+	padding: 60px 0;
+}
+.list-inline {
+	padding-left: 0px;
+	margin-left: -5px;
+	list-style: none;
+}
+.pull-right {
+	float: right;
+}
+.list-inline > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.pull-right {
+	float: right !important;
+}
+button {
+	overflow: visible;
+}
+button, select {
+	text-transform: none;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4285;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.btn {
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	padding: 9px 0;
+}
+/* @media all and (min-width:480px) */
+.btn {
+	font-size: 15px;
+	padding: 13px 0;
+}
+/* @media all and (min-width:768px) */
+.btn {
+	font-size: 12px;
+	padding: 8px 0;
+}
+/* @media all and (min-width:992px) */
+.btn {
+	font-size: 14px;
+	padding: 12px 0;
+}
+/* @media all and (min-width:1200px) */
+.btn {
+	font-size: 15px;
+	padding: 13px 0;
+}
+.buttonTransparent, .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:last-child a, .isotopeFilters ul.filter > li a {
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	border-color: #dedede;
+	padding: 0 15px;
+	color: #969696;
+	text-transform: uppercase;
+	outline: 0;
+}
+.buttonArea .buttonTransparent, .buttonArea .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:first-child .buttonArea a, .buttonArea .paginationCenter .pagination li:last-child a, .paginationCenter .pagination li:last-child .buttonArea a, .buttonArea .isotopeFilters ul.filter > li a, .isotopeFilters ul.filter > li .buttonArea a {
+	height: 45px;
+	line-height: 45px;
+}
+/* @media all and (min-width:768px) */
+.buttonArea .buttonTransparent, .buttonArea .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:first-child .buttonArea a, .buttonArea .paginationCenter .pagination li:last-child a, .paginationCenter .pagination li:last-child .buttonArea a, .buttonArea .isotopeFilters ul.filter > li a, .isotopeFilters ul.filter > li .buttonArea a {
+	margin-bottom: 0px;
+}
+.buttonArea.galleryBtnArea .buttonTransparent, .buttonArea.galleryBtnArea .paginationCenter .pagination li:first-child a, .paginationCenter .pagination li:first-child .buttonArea.galleryBtnArea a, .buttonArea.galleryBtnArea .paginationCenter .pagination li:last-child a, .paginationCenter .pagination li:last-child .buttonArea.galleryBtnArea a, .buttonArea.galleryBtnArea .isotopeFilters ul.filter > li a, .isotopeFilters ul.filter > li .buttonArea.galleryBtnArea a {
+	background-color: whitesmoke;
+	border-color: #ff891e;
+	color: #222222;
+	padding: 0 30px;
+}
+form input, form textarea {
+	border: none;
+	border-bottom: 1px solid #a1a1a1;
+	border-radius: 0;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+p {
+	margin: 0 0 10px;
+}
+p {
+	font-size: 14px;
+	color: black;
+	font-weight: 400;
+	line-height: 21px;
+}
+input[type=checkbox], input[type=radio] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type=checkbox], input[type=radio] {
+	margin: 4px 0 0;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+.booking-container .payment-wrap .title {
+	float: left;
+	margin: 25px 0;
+	width: 100%;
+}
+.booking-container .payment-wrap .title {
+	float: none;
+	margin: 10px 0;
+}
+/* @media all and (min-width:992px) */
+.col-md-5 {
+	width: 41.66%;
+}
+/* @media all and (min-width:992px) */
+.col-md-7 {
+	width: 58.33%;
+}
+.highlight-text {
+	margin-left: 5px;
+	margin-top: 26px;
+	color: #000;
+}
+.highlight-text li {
+	font-size: 13px;
+	font-style: italic;
+	list-style-type: disc;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.bookingForm .form .form-group label, .bookingForm .commentsForm .form-group label, .bookingForm .modal.bookingModal .modal-dialog .modal-content .modal-body .form-group label, .modal.bookingModal .modal-dialog .modal-content .bookingForm .modal-body .form-group label {
+	color: #222222;
+	font-weight: 400;
+}
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4285;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form .form-group .form-control, .commentsForm .form-group .form-control, .modal.bookingModal .modal-dialog .modal-content .modal-body .form-group .form-control {
+	height: 45px;
+	background-color: whitesmoke;
+	box-shadow: none;
+	border-color: #ccc;
+	background-color: #e0e0e0;
+	color: #000;
+	font-family: "Montserrat", "Open Sans", sans-serif;
+	font-size: 14px;
+}
+form span.error {
+	font-size: 12px;
+	color: red;
+	display: block;
+	margin-top: 2px;
+}
+.payment-wrap h3 {
+	margin: 0;
+}
+.payment-wrap h3 {
+	margin: 0;
+}
+/* @media all and (min-width:768px) */
+.col-sm-3 {
+	width: 25%;
+}
+.progress-wizard > .progress-wizard-step {
+	padding: 0;
+	position: relative;
+	margin-bottom: 40px;
+}
+.progress {
+	height: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+}
+/* @media all and (min-width:768px) */
+.progress {
+	background-color: transparent;
+}
+.progress-wizard > .progress-wizard-step > .progress {
+	position: relative;
+	border-radius: 0px;
+	height: 2px;
+	background: transparent;
+	box-shadow: none;
+	margin: 0;
+}
+.progress-wizard > :last-child.progress-wizard-step > .progress {
+	width: 50%;
+}
+.progress-wizard > .progress-wizard-step > .progress-wizard-dot {
+	display: block;
+	background-color: #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 2px solid #ff891e;
+	padding: 15px;
+	text-align: center;
+	max-width: 200px;
+	color: #222222;
+}
+/* @media all and (min-width:768px) */
+.progress-wizard > .progress-wizard-step > .progress-wizard-dot {
+	position: absolute;
+	top: -15px;
+	left: 28%;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+.modal.bookingModal .modal-dialog .modal-content, .packagesFilter, .lightHeader .navbar-nav > li > a:hover, .darkHeader .navbar-nav > li > a:hover, .lightHeader .navbar-nav > li > a:hover, .darkHeader .navbar-nav > li > a:hover, .countryTabs .nav-tabs > li.active > a, .countryTabs .nav-tabs > li.active > a:focus, .countryTabs .nav-tabs > li.active > a:hover, .progress-wizard > .progress-wizard-step > .progress-wizard-dot, .bookingForm .form .checkbox input[type=checkbox], .bookingForm .commentsForm .checkbox input[type=checkbox], .bookingForm .modal.bookingModal .modal-dialog .modal-content .modal-body .checkbox input[type=checkbox], .modal.bookingModal .modal-dialog .modal-content .bookingForm .modal-body .checkbox input[type=checkbox] {
+	border-color: #ff891e;
+}
+.progress-wizard > .progress-wizard-step.disabled > .progress-wizard-dot {
+	border-color: transparent;
+	color: #333;
+}
+.progress-bar {
+	float: left;
+	width: 0px;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #337ab7;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+	box-shadow: inset 0px -1px 0px rgba(0,0,0,0.15);
+	-webkit-transition: width .6s ease;
+	-o-transition: width .6s ease;
+	transition: width .6s ease;
+}
+.progress-wizard > .progress-wizard-step > .progress > .progress-bar {
+	width: 0px;
+	box-shadow: none;
+}
+/* @media all and (min-width:768px) */
+.progress-wizard > .progress-wizard-step > .progress > .progress-bar {
+	background: #ff891e;
+}
+.progress-wizard > .progress-wizard-step > .progress > .progress-bar {
+	width: 0%;
+}
+.buttonCustomPrimary, .accordionsTransparent .solidBgTitle .panel-heading, .accordionsTransparent .accordionSolidTitle .panel-heading.active, .accordionsTransparent .accordionSolidBar .panel-heading.active, .datepicker-dropdown thead tr:last-child th, .datepicker table tr td.day:hover, .datepicker table tr td.focused, .thumbnail.deals .discountInfo .discountOffer, .priceRange .price-slider-inner .ui-widget-content .ui-slider-range, .navbar-nav > li > a::after, .navbar-nav > li.dropdown.searchBox a .searchIcon, .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo .buttonTransparent:hover, .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo .paginationCenter .pagination li:first-child a:hover, .paginationCenter .pagination li:first-child .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo a:hover, .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo .paginationCenter .pagination li:last-child a:hover, .paginationCenter .pagination li:last-child .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo a:hover, .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo .isotopeFilters ul.filter > li a:hover, .isotopeFilters ul.filter > li .isotopeSelector .overlay.galleryMasonry .fancybox-pop .overlayInfo a:hover, .navbar-nav > li > a::after, .navbar-nav > li.dropdown.searchBox a .searchIcon, .countryTabs .nav-tabs > li > a::after, .blogSidebar .panel .panel-body .input-group .input-group-addon, .contactInfo .media .media-left, .teamMember .maskingArea .list-inline li a:hover, .progress-wizard > .progress-wizard-step > .progress > .progress-bar, .progress-wizard > .progress-wizard-step.complete > .progress-wizard-dot, .comingContent .list-inline li a:hover, .priceTable .panel:hover .priceCircle, .tabsPart .nav-tabs li a:hover, .bookingDetails {
+	background-color: #ff891e;
+}
+.progress-wizard > :first-child.progress-wizard-step > .progress {
+	left: 50%;
+	width: 50%;
+}
+.progress-wizard > .progress-wizard-step.active > .progress > .progress-bar {
+	width: 50%;
+}
+.progress-wizard > :first-child.progress-wizard-step.active > .progress > .progress-bar {
+	width: 0%;
+}
