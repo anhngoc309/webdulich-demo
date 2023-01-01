@@ -859,7 +859,244 @@ button, input, select, textarea {
 .pageTitle {
 	background-color: #003366;
 }
-
+.detail-tour-kiritm .list-tour-detail {
+	float: left;
+	background: #ffeddf;
+	padding: 6px 10px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+/* .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+/* @media all and (min-width:768px) */
+/* .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+	float: left;
+} */
+/* @media all and (min-width:768px) */
+/* .col-sm-12 {
+	width: 100%;
+} */
+/* @media all and (min-width:768px) */
+.col-sm-3 {
+	width: 25%;
+}
+/* @media all and (min-width:768px) */
+.col-sm-2 {
+	width: 16.66%;
+}
+/* @media all and (min-width:992px) */
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+	float: left;
+}
+/* @media all and (min-width:992px) */
+.col-md-9 {
+	width: 75%;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.btn-group-vertical > .btn-group::after, .btn-group-vertical > .btn-group::before, .btn-toolbar::after, .btn-toolbar::before, .clearfix::after, .clearfix::before, .container-fluid::after, .container-fluid::before, .container::after, .container::before, .dl-horizontal dd::after, .dl-horizontal dd::before, .form-horizontal .form-group::after, .form-horizontal .form-group::before, .modal-footer::after, .modal-footer::before, .modal-header::after, .modal-header::before, .nav::after, .nav::before, .navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before, .pager::after, .pager::before, .panel-body::after, .panel-body::before, .row::after, .row::before {
+	display: table;
+	content: " ";
+}
+.btn-group-vertical > .btn-group::after, .btn-toolbar::after, .clearfix::after, .container-fluid::after, .container::after, .dl-horizontal dd::after, .form-horizontal .form-group::after, .modal-footer::after, .modal-header::after, .nav::after, .navbar-collapse::after, .navbar-header::after, .navbar::after, .pager::after, .panel-body::after, .row::after {
+	clear: both;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* @media all and (min-width:768px) */
+.container {
+	width: 750px;
+}
+/* @media all and (min-width:992px) */
+.container {
+	width: 970px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+	width: 1170px;
+}
+.mainContentSection, .whiteSection, .lightSection {
+	width: 100%;
+	padding: 100px 0 70px 0;
+	background-color: #ffffff;
+	display: block;
+}
+.mainContentSection, .whiteSection, .lightSection {
+	padding-top: 30px;
+}
+.main-wrapper {
+	position: relative;
+} */
+.tour-detail-title-information {
+	text-align: left;
+	color: #262a2e;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.detail-tour-kiritm .list-tour-detail .tour-detail-header-col {
+	padding-top: 10px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	border-bottom: 1px solid #333;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.list-inline {
+	padding-left: 0px;
+	margin-left: -5px;
+	list-style: none;
+}
+.detail-tour-kiritm .list-tour-detail .tour-detail-content-col .list-inline {
+	margin: 0;
+	line-height: 32px;
+}
+/* @media all and (min-width:992px) */
+.col-md-2 {
+	width: 16.66%;
+}
+.list-inline .row .price {
+	color: #ff891e;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+.h5, h5 {
+	font-size: 14px;
+}
+.list-inline label, .list-inline h5 {
+	display: none;
+}
+.detail-tour-kiritm .list-tour-detail .tour-detail-content-col .list-inline .action-book {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 2px 0;
+}
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+a {
+	color: #ff891e;
+	text-decoration: none !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a, .sectionTitleDouble h2 span, .paginationCenter .pagination li a:hover, .paginationCenter .pagination li.active a, .paginationCenter .pagination li.active a:hover, .paginationCenter .pagination li.active a:focus, .accordionsTransparent .panel-heading.active, .thumbnail.deals .caption .captionTitle:hover, .thumbnail.deals .caption .detailsInfo h5, .thumbnail.blogPostItem .caption .detailsInfo h4, .thumbnail.citiesContent .caption .media .media-body a:hover, .thumbnail.citiesContent .caption .media .media-body h4, .blogTitle:hover, .blogInfo li a:hover, .footerContent .list-unstyled li a:hover, .copyRight .list-inline li a:hover, .copyRightText p a:hover, .destinations .media-body .list-unstyled li i, .destinations .media-body .list-unstyled li a:hover, .destinations .media-body .list-unstyled li a:hover i, .isotopeSelector .overlay .fancybox-pop .overlayInfo h5 span, .isotopeSelector:hover h4, .navbar-nav > li.open a, .navbar-nav > li.open a:hover, .navbar-nav > li.open a:focus, .navbar-nav > li > a:hover, .navbar-nav > li.active a, .navbar-nav > li.active a:hover, .navbar-nav > li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover, .navbar-nav > li.dropdown.singleDrop .dropdown-menu li a:hover, .lightHeader .navbar-nav > li > a:hover, .darkHeader .navbar-nav > li > a:hover, .footerContent .list-unstyled li a:hover, .copyRight .list-inline li a:hover, .copyRightText p a:hover, .promotionWrapper .promotionTable .promotionTableInner .promotionInfo .rating li, .media-heading a:hover, .bookingDetails, .bookingDetails .buttonTransparent:hover, .bookingDetails .paginationCenter .pagination li:first-child a:hover, .paginationCenter .pagination li:first-child .bookingDetails a:hover, .bookingDetails .paginationCenter .pagination li:last-child a:hover, .paginationCenter .pagination li:last-child .bookingDetails a:hover, .bookingDetails .isotopeFilters ul.filter > li a:hover, .isotopeFilters ul.filter > li .bookingDetails a:hover, .singlePackage .packageInfo .dl-horizontal dt, .singlePackage .packageInfo .dl-horizontal dd span, .singlePackage .packageInfo p span, .blogSidebar .panel .panel-body .list-group .list-group-item:hover, .blogSidebar .panel .panel-body .list-group .list-group-item:hover .badge, .tabArea .tab-content .media .media-body .media-heading:hover, .blogSinglePost .well .list-inline li a:hover, .commentsArea .media .media-body .btn-link, .commentsArea .media .media-body .btn-link:hover, .aboutComments .commentsTable .commentsTableInner .commentsInfo h5, .bookingForm .form .checkbox label a, .bookingForm .commentsForm .checkbox label a, .bookingForm .modal.bookingModal .modal-dialog .modal-content .modal-body .checkbox label a, .modal.bookingModal .modal-dialog .modal-content .bookingForm .modal-body .checkbox label a, .infoArea h2 span, .priceTotal h2 span, .priceTable .panel .priceCircle h3, .priceTable .panel:hover .bodyImageBg .priceCircle h3, .countryTabs .nav-tabs > li.pull-right .list-inline li a:hover {
+	color: #ff891e;
+}
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4285;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.btn {
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	padding: 9px 0;
+}
+/* @media all and (min-width:480px) */
+.btn {
+	font-size: 15px;
+	padding: 13px 0;
+}
+/* @media all and (min-width:768px) */
+.btn {
+	font-size: 12px;
+	padding: 8px 0;
+}
+/* @media all and (min-width:992px) */
+.btn {
+	font-size: 14px;
+	padding: 12px 0;
+}
+/* @media all and (min-width:1200px) */
+.btn {
+	font-size: 15px;
+	padding: 13px 0;
+}
+.btn.book-tour {
+	background-color: #4a86e8;
+}
+.btn.book-tour {
+	background-color: #4a86e8 !important;
+}
+.detail-tour-kiritm .list-tour-detail .tour-detail-content-col .list-inline .action-book .btn-book-tour {
+	line-height: 26px !important;
+	font-size: 13px;
+	padding: 0 8px;
+	color: #fff;
+	background: #ff891e;
+	margin: 0 auto;
+}
+.detail-tour-kiritm .list-tour-detail .tour-detail-content-col .list-inline .action-book .btn-book-tour {
+	line-height: 26px !important;
+	font-size: 13px;
+	padding: 0 8px;
+	color: #fff;
+	background: #4a86e8;
+	margin: 0 auto;
+	min-width: 107px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .footer {
     margin-top: 30px;
